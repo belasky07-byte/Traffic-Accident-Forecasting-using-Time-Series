@@ -1,7 +1,7 @@
 # Forecasting Traffic Accidents Using Holt-Winters Time Series Models (ATUS 1997–2024)
 This project analyzes and forecasts traffic accident trends in Mexico using historical data from the ATUS dataset (1997–2024). 
 
-# Objectives
+# Objective
 The goal is to identify temporal patterns such as trend and seasonality, and to generate accurate forecasts for future periods using time series modeling techniques.
 
 # Technologies Used
