@@ -1,5 +1,5 @@
 # Forecasting Traffic Accidents Using Holt-Winters Time Series Models (ATUS 1997–2024)
-This project analyzes and forecasts traffic accident trends in Mexico using historical data from the ATUS dataset (1997–2024). T
+This project analyzes and forecasts traffic accident trends in Mexico using historical data from the ATUS dataset (1997–2024). 
 
 # Objectives
 The goal is to identify temporal patterns such as trend and seasonality, and to generate accurate forecasts for future periods using time series modeling techniques.
@@ -21,20 +21,20 @@ The goal is to identify temporal patterns such as trend and seasonality, and to 
 
 # Methodology
 - Data Preprocessing
-Resolved encoding issues (UTF-8 with BOM)
-Cleaned and structured data into a time series format
-Converted dates to a proper datetime index with monthly frequency (MS)
-Handled outliers, particularly the April 2020 anomaly, using seasonal imputation
+  * Resolved encoding issues (UTF-8 with BOM)
+  * Cleaned and structured data into a time series format
+  * Converted dates to a proper datetime index with monthly frequency (MS)
+  * Handled outliers, particularly the April 2020 anomaly, using seasonal imputation
 
 - Exploratory Data Analysis
-Visualized the full time series to identify trend and seasonality
-Detected strong seasonal patterns with peaks at the end of each year
-Identified structural breaks (e.g., 2020 due to external factors)
+  * Visualized the full time series to identify trend and seasonality
+  * Detected strong seasonal patterns with peaks at the end of each year
+  * Identified structural breaks (e.g., 2020 due to external factors)
 
 - Modeling
-Applied the Holt-Winters additive model
-Captured level, trend, and seasonal components
-Optimized smoothing parameters automatically
+  * Applied the Holt-Winters additive model
+  * Captured level, trend, and seasonal components
+  * Optimized smoothing parameters automatically
 
 - Model Evaluation
 The model was evaluated using the following metrics:
@@ -47,10 +47,10 @@ The model was evaluated using the following metrics:
 Generated forecasts for 2025 using the fitted model showed that the series maintains a consistent seasonal behavior over time. The results indicate that higher accident rates are expected during the final months of the year, following the historical trend observed in previous periods.
 
 # Key Insights
-The time series exhibits strong and stable seasonality
-The model effectively captures recurring monthly patterns
-External shocks (e.g., 2020) introduce anomalies but do not significantly affect overall performance
-The model demonstrates robustness and reliability for forecasting
+- The time series exhibits strong and stable seasonality
+- The model effectively captures recurring monthly patterns
+- External shocks (e.g., 2020) introduce anomalies but do not significantly affect overall performance
+- The model demonstrates robustness and reliability for forecasting
 
 # Conclusion
 The Holt-Winters additive model proved to be an effective approach for modeling and forecasting traffic accident data with strong seasonal characteristics. The low forecasting error (MAPE ≈ 2.8%) highlights the model’s accuracy and suitability for real-world applications.
